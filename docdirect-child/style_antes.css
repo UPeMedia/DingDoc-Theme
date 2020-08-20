@@ -1,0 +1,488 @@
+/*
+Theme Name: DocDirect Child
+Description: Child theme for DocDirect. Child themes are the recommended way of making modifications to a theme. <a href="http://codex.wordpress.org/Child_Themes">Read More</a>
+Author: Themographics
+Author URI: http://themeforest.net/user/themographics
+Template: docdirect
+Text Domain: docdirect-child
+Domain Path: /languages
+License:
+License URI:
+*/
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+#header.tg-haslayout{ float:none; background: #6740f3; }
+.doc-header {border: none !important;}
+.tg-inner-header .tg-navigationarea{border-bottom: 0px;}
+.logo {   float: left;   padding: 10px 0; }
+.tg-nav ul li a, .tg-login-logout > li > a {color: white; }
+.tg-nav .navbar-collapse.in  ul li a {color: #322260; text-align: center; }
+.tg-nav .navbar-collapse.in ul li a:hover {border-bottom: 0px;}
+
+
+.tg-nav .navbar-collapse ul li a:hover, .tg-login-logout > li > a:hover {color:#F17E30 !important;}
+.tg-nav ul li:after{ background: transparent !important;}
+.doc-menu .tg-login-logout li ul, .tg-nav ul, .doc-menu .tg-login-logout li ul{border-top-color: #F17E30!important;}
+.tg-page-wrapper {padding: 20px 0;}
+.titulonaranja{ color:#565656;}
+.titulogris{ color:#707070;}
+.iconorange i {color: #F17E30;}
+
+
+#homesec3 .builder-items { position: relative;}
+#homesec3 .builder-items .hometxt-valign{
+	position: absolute; top: 0;bottom: 0;right: 0; width: 50%;height: 30%;margin: auto;}
+
+#homesec4 .builder-items { position: relative;}
+#homesec4 .builder-items .hometxt-valign{
+	position: absolute; top: 0;bottom: 0;left: 0; width: 50%;height: 30%;margin: auto;}
+#homesec4 .col-right { float: right;}
+
+@media only screen and (max-width: 767px) {
+
+	.tg-nav ul {background: white !important;}
+	#homesec3 .col-left{
+		margin-top:50px;
+	}
+	#homesec4 .builder-items .hometxt-valign{
+		position: relative;
+	}
+	#homesec3 .builder-items .hometxt-valign,
+	#homesec4 .builder-items .hometxt-valign{
+		width: 100%; text-align: center; height:100%;
+	}
+}
+
+#homesec5 .col-center figure {text-align:center;}
+#homesec5  {background: transparent !important;}
+.doc-footermiddlebar{background: #6740f3;}
+.doc-footerbottombar{background: #6740f3 !important;}
+.tg-widget > div {border: 0px; }
+.doc-copyrights {float: none !important; text-align:center;}
+.doc-fcols > div:nth-child(2){border: 0px !important; min-height: auto !important;}
+.doc-fcol .custom-html-widget{text-align: center}
+.doc-fcols {padding: 20px 0 !important;}
+
+/*.tg-honourawards {display:none;}*/
+
+/*nuevo integrar */
+@media only screen and (max-width: 767px) {
+    /*.centrado-smallscreen{
+        margin-left:25%;
+    }*/
+}
+.specialities-search-wrap { display: none;}
+.subcategoriaperfil {text-transform: capitalize;}
+/* .tg-userbanner:after{
+	background: grey !important;} */
+
+#header.tg-haslayout{
+	background: url('images/1-hometop1.png') center bottom;
+	background-size: cover;
+	padding-bottom: 30px;
+	height: 210px;
+}
+
+
+/*nuevo css para template morado obscuro */
+#header .tg-navigationarea{
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+
+@media only screen and (min-width: 762px ) and (max-width: 992px) { /*para que entre en el header*/
+	#header .tg-navigationarea{ margin-top: 0px; margin-bottom: 0px;}
+	#header .logo {padding: 20px 0 10px !important; }
+}
+
+@media only screen and (min-width: 0px )and (max-width: 761px) { /*para que entre en el header*/
+	/*#header .tg-navigationarea{ margin-top: 0px; margin-bottom: 0px;}
+	#header .logo {padding: 20px 0 10px !important; }*/
+	#header .tg-navigationarea {margin-top: 20px;}
+	#header .logo {padding: 15px 0 !important;}
+}
+
+
+.tg-nav .navbar-collapse ul li a:hover, .tg-login-logout > li > a:hover span{
+	border-bottom: 3px solid #ED981D;
+	margin-bottom: -3px;
+}
+
+.seccionquees{height:400px; background-position:center !important;}
+/*.seccionquees2{height:600px;background-position:center!important;}
+.seccionquees3{height:600px;background-position:center!important;}*/
+
+.imgdescarga img {max-width:50% !important}
+
+#doc-footer{ background: url('https://dingdoc.com.gt/wp-content/uploads/2020/01/footer.png') 100% center;
+	background-size: cover;
+	padding-top: 30px;
+	background-position-x: center;
+	background-position-y: top;
+}
+#doc-footer div{background: transparent !important; }
+#doc-footer .doc-fcol{display:none;}
+
+#header {z-index: 9999;display: block;position: absolute;margin-top: 0;}
+.dashboard #header{position: relative;}
+.docdirect-system-banner {margin-top: 170px;}
+
+.modal{z-index: 9999;}
+
+.tg-navigationarea .doc-menu {padding-top:0px;}
+
+@media only screen and (min-width: 892px )and (max-width: 1079px) {
+	.tg-navigationarea .doc-menu .tg-login-logout {/*padding-top: 15px !important;*/ }
+}
+
+
+/*menu*/
+.tg-nav{text-transform: none !important;}
+.tg-nav .navbar-collapse ul li a{	font-family: 'Gilroy-Bold';}
+
+.tg-nav ul li, .tg-nav #tg-navigation > ul > li:last-child{	/*padding: 40px 30px;*/	}
+
+.session-user-info a span.s-user {	font-family: 'Gilroy-Bold'; font-size: 16px; text-transform: none;}
+
+.tg-heading-border.tg-small{	font-family: 'Gilroy-Medium';	color: #707070;	}
+@media only screen and (min-width: 768px )and (max-width: 992px) {
+	.doc-menu{position: absolute!important;top: 20px!important;right: 0px!important;}
+}
+@media only screen and (min-width: 0px )and (max-width: 500px) {
+	.doc-menu{position: absolute !important;top: 90px;left: 0px;width: 80%!important;text-align: left;}
+	.tg-nav {position: absolute!important;top: 90px;right: 0px;width: 100%!important;}
+	.tg-navigationarea .logo { width: 100%!important; }
+	.tg-navigationarea .logo img { margin-left: auto; margin-right: auto; }
+	.menuflotante{left:0px !important;}
+}
+/*fin menu*/
+
+#topcategorias{ background: transparent; background-color: transparent !important;}
+#topcategorias h2{font-family: 'Gilroy-ExtraBold'}
+#topcategorias h3{font-family: 'Gilroy-Medium'}
+
+.seccionquees{
+	background-size:cover;
+	border-top: 8px solid #6131BA;
+	border-bottom: 8px solid #6131BA;
+	background-image: linear-gradient(to right, #0C0B3A , #66259F);
+}
+.seccionquees .tituloblanco {color: white;}
+.seccionquees .textohome{color: white;font-family: 'Gilroy-Medium'; margin-top:50px; text-align:center; line-height: 25px;}
+.seccionquees .textohome span {color: white;font-family: 'Gilroy-Bold' }
+
+.titulonaranja2{ font-family: "Gilroy-ExtraBold"; color: #F17E30 }
+.textogris {font-family: 'Gilroy-Medium'; line-height: 25px; color: #707070;  }
+.textoblanco {font-family: 'Gilroy-Medium'; line-height: 25px; color: #ffffff;  }
+
+.imagenseccion2 img{max-width: 80%;}
+.imagenseccion3 img{max-width: 80%;}
+
+ul{ font-family: 'Gilroy-Medium'; line-height: 25px; color: #707070; font-size: 16px;}
+
+.imagenseccion2 ul, .imagenseccion2 ul li{ list-style: none ; /* Remove default bullets */}
+.ulorange ul, .ulorange ul li{ list-style: none ; /* Remove default bullets */}
+
+.tg-main-section.quienespueden { padding:30px 0;}
+.quienespueden .builder-items { display: flex;  width: 100%;}
+.imgmedicina1 {background: url("https://dingdoc.com.gt/wp-content/uploads/2020/01/iconosmed1.png") no-repeat top center; background-size:contain; }
+
+
+.imagenseccion2 ul li::before, .ulorange ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #F17E30; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.tg-modaltabs-nav{ background-image: linear-gradient(to right, #0C0B3A , #66259F); }
+.tg-modaltabs-nav li a,
+.tg-modaltabs-nav li.active a{
+	background: transparent;
+	color: white;
+	font-family: 'Gilroy-Bold'
+}
+.tg-modaltabs-nav li.active a, .tg-modaltabs-nav li a:hover{
+	background: transparent;
+	color: #F17E30;
+	font-family: 'Gilroy-Bold'
+}
+.tg-modaltabs-nav li.active, .tg-modaltabs-nav li:hover {border-top: 0px;}
+
+.tg-btn {	border-radius: 20px; width:200px !important; color: white !important;    background: #F17E30 !important;
+	border: 2px solid #DBDBDB !important; font-family: 'Gilroy-Medium'; }
+
+
+.botonnaranja {
+	border-radius: 18px; color: white !important;    background: #F17E30 !important;
+	border: 2px solid #DBDBDB !important; font-family: 'Gilroy-Medium'; width: 200px;
+    text-align: center;    font-size: 20px;    padding: 10px;
+}
+.botonnaranja a{color:white; font-family: 'Gilroy-Medium'; font-size: 20px;  }
+.botonnaranja a:hover {color: white !important; }
+
+.centermargin {margin-left: auto; margin-right: auto; }
+.textomargintop{margin-top: 5%;}
+
+
+@media only screen and (min-width: 0px )and (max-width: 992px) {
+	/*.seccionquees2, .seccionquees3 {float: none !important;}*/
+	.titulonaranja2 {text-align: center !important;}
+	.botonnaranja {margin-left: auto !important;    margin-right: auto !important;}
+}
+.paddingsmall{padding: 10px !important;}
+.textaligncenter{ text-align: center; }
+.pagesection1{ /*margin-top: 170px;*/}
+.moremargintop { /*margin-top: 220px; */}
+.margintopsmall {margin-top: 60px;}
+
+.packages #main { /*margin-top: 200px;*/}
+.contact-us #main { /*margin-top: 200px;*/}
+
+@media (max-width: 1199px){
+	.tg-blog-list .tg-post .tg-feature-img{		width: 40% !important;	}
+	.tg-blog-list .tg-contentbox { width: auto !important;}
+	/*.tg-nav{ width: 100%;}*/
+	.tg-nav ul{font-size: 16px!important;}
+	.session-user-info a span.s-user { font-size: 16px!important;}
+	.tg-nav ul li, .tg-login-logout > li{padding: 25px 10px 10px !important; }
+}
+
+.contactform1 .tg-refinesearcharea{ background: transparent !important; }
+.textbold {font-family: 'Gilroy-Bold';}
+
+.group-blog #main, .blog-list #main, .single-post #main {/*margin-top: 200px; */}
+
+/*.tg-about-author, .tg-comment-formarea, .tg-tags {display: none; }*/
+ul.tg-tags li{font-family: 'Gilroy-Regular' !important; font-size: 14px !important; }
+
+.tg-userexperience ul li .tg-dotstyletitle h3{font-family: 'Gilroy-Regular' !important; font-size: 14px !important; }
+.tg-honourawards ul li .tg-dotstyletitle {
+    width: 100%;    float: left;    margin: 0 0 0px;    line-height: inherit;
+}
+.tg-honourawards ul li .tg-dotstyletitle h3{
+	font-family: 'Gilroy-Regular' !important; font-size: 14px !important;
+}
+.tg-honourawards ul{
+	width: 100%;float: left;
+    padding: 0 0 0 35px; list-style: none;
+}
+.tg-honourawards ul li {
+    width: 100%;    float: left;
+    list-style-type: none;    line-height: normal;
+}
+.tg-honourawards ul li .tg-dotstyletitle h3::after {
+    left: 0;    top: 50%;    content: '';    width: 6px;
+    height: 6px;    margin: -3px 0 0 0;
+    background:     #5d5955;    border-radius: 50%;    position: absolute;
+}
+.tg-honourawards ul li h3 {line-height: 20px;
+	color:#5d5955;
+	margin: 0 0 10px;
+	padding: 0 0 0 10px;
+	position: relative; }
+
+.tg-metadata{display: none;}
+
+.tg-feature-img, .tg-contentbox, .tg-show {border: 0px !important; }
+.tg-heading-border h3 {font-family: 'Gilroy-Bold'; border-bottom: 0px;}
+.tg-blog-list .tg-post .tg-feature-img img {/*max-height:200px;*/}
+.tg-post-detail .tg-post h2{font-family: 'Gilroy-Bold'; border-bottom: 0px; font-size: 20px; color:#F17E30; }
+.tg-post-detail .tg-post .tg-description {font-family: 'Gilroy-Medium'; font-size: 18px; line-height: 25px;}
+.social-share {margin-top:30px; border-top: 0px !important; border-bottom:0px !important;}
+.profile-share a  {width: 50%; display:block; float: left; text-align:center; }
+
+.tg-blog-list .tg-post .tg-feature-img img{max-height:201px;}
+.tg-blog-list .tg-contentbox { height:202px;}
+.faq #main {margin-top: 200px; }
+.faq .fw-accordion .fw-accordion-content {color: #707070; font-size: 20px; line-height: 25px; border: 0px !important; font-family: 'Gilroy-Medium';}
+.faq .fw-accordion .fw-accordion-content p{line-height: 25px;}
+.faq .fw-accordion .fw-accordion-title {
+	margin-top:25px !important;
+	line-height:30px;
+	height: auto;
+	font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+	color: #662D91 !important; border: 0px !important; background: transparent !important; font-family: "Gilroy-ExtraBold";
+}
+.faq .fw-accordion .fw-accordion-title.ui-state-hover{color:#662D91 !important;}
+.faq .fw-accordion .fw-accordion-title .ui-icon{width:14px;}
+.faq .ui-widget-content { background: transparent;}
+
+.page-template-user_search #wrapper, .author #wrapper, .page-template-default #wrapper  {
+	background: url('https://dingdoc.com.gt/wp-content/uploads/2020/01/dfondo.jpg') no-repeat bottom right;
+    background-size: cover;
+    /*background-color: red;*/
+}
+
+#main {margin-top: 200px!important; }
+
+.doc-newslettercontent {text-align:center; font-family: 'Gilroy-Medium';}
+.doc-newslettercontent h2 {font-family: 'Gilroy-Medium';}
+.doc-newslettercontent p {font-family: 'Gilroy-Medium';}
+
+.doc-formnewsletter .form-group{
+	width: 45% !important;  margin-right: 10px!important; padding-right: 10px!important; text-align:center; font-family: 'Gilroy-Medium';}
+.doc-formnewsletter {margin-top:30px;max-width: 700px;margin-left: auto; margin-right: auto; font-family: 'Gilroy-Medium';}
+.doc-formnewsletter input {border-radius: 25px;  border: 0px; max-width:300px;}
+.doc-formnewsletter fieldset {background: transparent !important; font-family: 'Gilroy-Medium';}
+.doc-btnsubscribe.subscribe_me {background: transparent;}
+.doc-footerbottombar {color: white; font-family: 'Gilroy-Medium';}
+.doc-footerbottombar [class*="fa fa-"] {
+    background-color: #fff;
+    border-radius: 30px;
+    color: #4D1E83;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*PAGINA DE RESULTADOS*/
+.doc-widgetheading{background: transparent !important; border: 0px !important;}
+.doc-widgetcontent{background: transparent !important; border: 0px !important;}
+.subcategories-search-wrap, .specialities-search-wrap{background: transparent !important;}
+
+.search-filters-wrap .doc-widgetheading {/*border-bottom: 1px solid grey !important;*/ text-align:left;}
+.doc-btnarea button, .doc-widget .doc-btn{
+	border-radius: 18px; color: white !important;    background: #F17E30 !important;
+	border: 2px solid #DBDBDB !important; font-family: 'Gilroy-Medium';
+    text-align: center; /*font-size: 20px;*/    padding: 10px; line-height: 30px !important;}
+.doc-formsearchwidget .doc-btnarea button.doc-btn{background: #F17E30 !important; padding:3px 10px 1px !important; }
+.doc-widgetfilterspecialist input.doc-btn{background: #F17E30 !important; padding:3px 10px 1px !important; }
+
+.doc-featurelist .list-avatar img {border-radius: 25px;}
+.doc-searchresult {display: none;}
+.doc-sortby {display: none;}
+.doc-featurehead h2{font-family: "Gilroy-Bold"; color: #808285; }
+
+.doc-featurelist .doc-description{display: none;}
+.doc-featurelist .doc-featurehead span{ font-family: "Gilroy-Regular"; color: #808285; }
+.doc-featurelist .doc-addressinfo address { font-family: "Gilroy-Regular"; color: #808285; }
+.doc-featurelist .doc-addressinfo span { font-family: "Gilroy-Regular"; color: #808285; }
+.doc-featurelist .doc-addressinfo a { font-family: "Gilroy-Regular"; color: #808285; }
+.doc-featurelist .doc-addressinfo i {color: #ED981D;}
+.doc-featurelist .doc-featureimg img {/*width: 200px !important;*/}
+.doc-listview .doc-featurelist .doc-featureimg{ margin: 0px 40px 0 40px !important; }
+
+.tg-usercontactinfo h3 {/*display: none;*/}
+.tg-social-facebook span{text-align: center; display: block;}
+
+.tg-doccontactinfo li address{ font-family: "Gilroy-Regular"; color: #808285; font-size: 15px;}
+.tg-doccontactinfo li span{ font-family: "Gilroy-Regular"; color: #808285; font-size: 15px;}
+.tg-doccontactinfo li a{ font-family: "Gilroy-Regular"; color: #808285; font-size: 15px; }
+.tg-doccontactinfo li i {color: #ED981D !important;}
+a.send-message {/*display: none;*/}
+.gmaps{background: url("https://dingdoc.com.gt/wp-content/uploads/2020/01/gmaps.png") no-repeat !important; width: 40px !important; height:40px !important; position: relative;    display: inline-block;    vertical-align: middle;}
+.waze{background: url("https://dingdoc.com.gt/wp-content/uploads/2020/01/waze.png") no-repeat !important; width: 40px !important; height:40px !important; position: relative;    display: inline-block;    vertical-align: middle;}
+.tg-userbanner:after {background: transparent !important; }
+.tg-userbanner { background: transparent !important;}
+.tg-userbanner-content h1 {font-family: "Gilroy-Bold"; color:#6D6E71 !important; }
+.subcategoriaperfil {font-family: "Gilroy-Medium"; color:#6D6E71 !important; }
+.tg-userheading h2{font-family: "Gilroy-Bold"; color:#6D6E71 !important; text-transform: initial !important;}
+.tg-description p {font-family: "Gilroy-Regular"; color:#6D6E71 !important; }
+.professional-statements {display: none;}
+.tg-userexperience .tg-description {display: none;}
+.tg-widgetrelatedposts .sp-provider-articles {display: none;}
+.tg-presentationvideo-wrap {display: none;}
+.tg-serviceprovidercontent {display: none;}
+.tg-userdetail .tg-widget{border: 0px;}
+.tg-userimg figcaption{display: none; }
+.detail-avatar img {border-radius: 100%; border: 5px solid #322260; }
+
+.tg-btn.make-appointment-btn{
+	border-radius: 25px; color: white !important;    background: #F17E30 !important;
+	border: 2px solid #DBDBDB !important; font-family: 'Gilroy-Medium';
+    text-align: center; /*font-size: 20px;*/    padding: 10px; line-height: 30px !important;}
+.dashboard #main {margin-top: 0px !important;}
+/*.home #main {margin-top: 0px !important;}*/
+
+.ofreces-servicios-medicos .seccionquees{ height: auto; }
+.fondopastillas { background: url("https://dingdoc.com.gt/wp-content/uploads/2020/01/iconosmed1.png") bottom right no-repeat; }
+.centerimage {text-align: center; }
+.centerimage img{width:60%;}
+
+.tg-form-signin fieldset, .tg-form-signup fieldset {text-align: center;}
+
+
+/*cambios para dashboard*/
+.tg-listing-head {color:#707070; background: none; border-bottom: 1px solid #707070;}
+.tg-listing-head .tg-titlebox h3{font-family: 'Gilroy-Bold'; color: #707070; }
+.tg-list:nth-child(2n+1) {background: none; }
+.tg-listbox .tg-listdata h4 a { text-transform: capitalize; color:
+#5d5955; font: 400 14px/20px 'Open Sans', Arial, Helvetica, sans-serif; }
+.tg-listbox:nth-child(2) span {text-transform: capitalize; color:
+#5d5955; font: 400 14px/20px 'Open Sans', Arial, Helvetica, sans-serif; }
+
+.dashboard-sidebar .tg-docprofile-img a img {border: 0px;}
+.dashboard-sidebar .dashboard .tg-docprofile-img a {border: 0px;}
+.dashboard .tg-docprofile-img a {border: 0px;}
+
+.dashboard .form-resetpassword .row .col-md-4 { text-align: center; }
+.appointment-data-wrap li span{color: #666;}
+.appointment-data-wrap .tg-description p {color: white !important;}
+.wt-offersmessages ul li:first-child{border-right: 1px solid #ddd !important;}
+.tg-editprofile .gallery-button .tg-btn{font-size: 12px!important;padding: 0px!important;}
+
+/*cupones*/
+.affcoups .affcoups-coupon__discount{ background: #662D91 !important;
+	color: white !important; font-family: 'Gilroy-Medium'!important;  }
+.affcoups .affcoups-clipboard {background: #CEE3E6 !important; }
+.affcoups .affcoups-coupons-grid a.affcoups-coupon__button{
+	border-radius: 18px!important;
+	color:white !important;
+	background:#F17E30 !important;
+	border: 2px solid    #DBDBDB !important;
+    font-family: 'Gilroy-Medium'!important;
+    width: 200px!important;
+    text-align: center!important;
+    font-size: 20px!important;
+    padding: 0px!important;
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+/*fin cupones*/
+
+.step-nextn{float:right;}
+.tg-doccontactinfo li a{word-wrap: break-word;}
+.tg-about-author.tg-haslayout{display:none !important;}
+.form-comment .tg-btn {padding:0px !important;}
+.contactuserurl a {font-size: 12px !important;}
+.claim-box{display:none;}
+.tg-companyfeaturebox, .tg-likestars {display:none;}
+
+.tg-form-modal .mo-openid-app-icons{display: block !important;}
+
+.doc-favoriteicon i {padding-top:7px !important;}
+
+#doc-sidebar .subcategories-search-wrap {display: none;}
+
+
+/*===---   DOCTORS LIST VIEW   ---===*/
+
+main#main .doc-twocolumns.doc-listview {
+    margin-top: 45px;
+}
+
+main#main .doc-twocolumns.doc-listview .pull-left aside#doc-sidebar .doc-widgetheading {
+    padding-left: 0px;
+}
+
+main#main .doc-twocolumns.doc-listview .pull-left aside#doc-sidebar .doc-widgetheading h2 {
+    font-size: 1.8rem;
+    font-family: 'Gilroy-ExtraBold';
+}
+
+main#main .doc-twocolumns.doc-listview .pull-left aside#doc-sidebar .doc-widgetcontent {
+    padding-top: 0;
+}
