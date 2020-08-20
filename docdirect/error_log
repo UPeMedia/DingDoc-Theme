@@ -1,8 +1,0 @@
-[13-Jan-2020 02:08:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/dingdoccom/public_html/wp-content/themes/docdirect/index.php:14
-Stack trace:
-#0 {main}
-  thrown in /home/dingdoccom/public_html/wp-content/themes/docdirect/index.php on line 14
-[13-Jan-2020 02:09:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/dingdoccom/public_html/wp-content/themes/docdirect/index.php:14
-Stack trace:
-#0 {main}
-  thrown in /home/dingdoccom/public_html/wp-content/themes/docdirect/index.php on line 14
