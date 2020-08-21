@@ -313,7 +313,7 @@ ul.tg-tags li{font-family: 'Gilroy-Regular' !important; font-size: 14px !importa
 .profile-share a  {width: 50%; display:block; float: left; text-align:center; }
 
 .tg-blog-list .tg-post .tg-feature-img img{max-height:201px;}
-.tg-blog-list .tg-contentbox { height:202px;}
+.tg-blog-list .tg-contentbox { /*height:202px;*/}
 .faq #main {margin-top: 200px; }
 .faq .fw-accordion .fw-accordion-content {color: #707070; font-size: 20px; line-height: 25px; border: 0px !important; font-family: 'Gilroy-Medium';}
 .faq .fw-accordion .fw-accordion-content p{line-height: 25px;}
@@ -706,6 +706,7 @@ main#main .container .tg-userbanner-content h1 {
 main#main .container .tg-userbanner-content span.subcategoriaperfil {
     font-size: 2.4rem;
     line-height: 1;
+    color: #000 !important;
 }
 
 main#main .container .tg-userbanner-content span.subcategoriaperfil:nth-child(2) {
@@ -715,4 +716,141 @@ main#main .container .tg-userbanner-content span.subcategoriaperfil:nth-child(2)
 main#main .container .tg-userdetail .provider-sections h2 {
     font-size: 3rem;
     color: #322260 !important;
+    line-height: 1;
+}
+
+main#main .container .tg-userdetail .provider-sections h2 i.fad.fa-plus-circle:before {
+    color: #fff;
+}
+
+main#main .container .tg-userdetail .provider-sections h2 i.fad.fa-plus-circle:after {
+    color: #322260;
+    opacity: 1;
+}
+
+main#main .container .tg-userdetail .provider-sections .tg-description p, main#main .container .tg-userdetail .provider-sections .see-more-info p, main#main .container .tg-userdetail .provider-sections .tg-doctor-profile li h3, main#main .container .tg-userdetail .provider-sections .tg-userexperience li h3 {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+    color: #000 !important;
+}
+
+main#main .container .tg-userdetail .provider-sections .tg-userexperience li .tg-dotstyletitle {
+    margin: 0;
+}
+
+
+/*===---   COUPONS   ---===*/
+
+main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item .affcoups-coupon {
+    border: solid 1px #f07d2f;
+}
+
+main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item .affcoups-coupon .affcoups-coupon__header img.affcoups-coupon__image {
+    padding: 60px 23px 15px;
+}
+
+main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item .affcoups-coupon .affcoups-coupon__header span.affcoups-coupon__discount {
+    font-family: 'Gilroy-Bold' !important;
+    font-size: 1.7rem;
+    line-height: 1;
+    background: url(https://dingdoc.app/wp-content/uploads/2020/08/liston-cupon.png) right no-repeat !important;
+    background-size: cover;
+    padding: .5em 4em .4em 2em;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item .affcoups-coupon .affcoups-coupon__content {
+    padding: 0;
+}
+
+main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item .affcoups-coupon .affcoups-coupon__content span.affcoups-coupon__title {
+    padding: 0 20px;
+}
+
+main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item .affcoups-coupon .affcoups-coupon__content .affcoups-coupon__types {
+    padding: 0 20px;
+}
+
+main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item .affcoups-coupon .affcoups-coupon__content .affcoups-coupon__description {
+    padding: 0 20px;
+}
+
+main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item .affcoups-coupon .affcoups-coupon__content .affcoups-coupon__code .affcoups-clipboard {
+    background: #f7f7f7 !important;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+
+/*===---   BLOG   ---===*/
+
+main#main .container .tg-blog-list article.tg-post {
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+main#main .container .tg-blog-list article.tg-post figure.tg-feature-img {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 30px 30px 0 0;
+}
+
+main#main .container .tg-blog-list article.tg-post figure.tg-feature-img img {
+    width: 100%;
+    max-height: 100%;
+}
+
+main#main .container .tg-blog-list article.tg-post .tg-contentbox .tg-heading-border h3 {
+    font-size: 3.5rem;
+    width: 100%;
+}
+
+main#main .container .tg-blog-list article.tg-post .tg-contentbox .tg-heading-border p {
+    font-family: 'Gilroy-Medium';
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+main#main .container .tg-blog-list article.tg-post .tg-contentbox .tg-description{
+    margin-bottom: 35px;
+}
+
+main#main .container .tg-blog-list article.tg-post .tg-contentbox .tg-description p {
+    font-family: 'Gilroy-Medium';
+    font-size: 1.8rem;
+    color: #333333;
+}
+
+main#main .container .tg-blog-list article.tg-post .tg-contentbox .tg-autor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #2983d6;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+main#main .container .tg-blog-list article.tg-post .tg-contentbox .tg-autor p {
+    font-family: 'Gilroy-Medium';
+    font-size: 2rem;
+    color: #fff;
+}
+
+main#main .container .tg-blog-list article.tg-post .tg-contentbox .tg-autor p strong {
+    font-family: 'Gilroy-Bold';
+    color: #fff;
+}
+
+
+
+/*===---   RESPONSIVE   ---===*/
+
+@media (min-width:481px) {
+    /*-- COUPONS --*/
+    main#main .container .affcoups .affcoups-coupons-grid--col-2 .affcoups-coupons-grid__item {
+        width: 30%;
+    }
 }

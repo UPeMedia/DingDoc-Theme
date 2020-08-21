@@ -141,7 +141,7 @@ $count_post = $query->found_posts;
 					
 					?>
 					<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 tg-verticaltop">
-						<article class="tg-post">
+						<article class="tg-post dsss">
 							<figure class="tg-featuredimg">
 								<a href="<?php echo esc_url(get_permalink()); ?>">
 									<img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($image_alt); ?>">

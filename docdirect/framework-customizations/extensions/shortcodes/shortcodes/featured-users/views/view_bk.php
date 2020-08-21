@@ -14,7 +14,7 @@ $query_args	= array(
 					'role'  => 'professional',
 					'count_total' => false,
 					'order' => $order,
-					'number' => $show_users
+					'number' => $show_users 
 				 );
 
 if( isset( $users_type ) && !empty( $users_type ) && $users_type !='all' ) {
@@ -52,10 +52,10 @@ if( !empty( $meta_query_args ) ) {
 }
 
 $query_args['meta_key']	   = 'user_featured';
-$query_args['orderby']	   = 'meta_value';
-$user_query  = new WP_User_Query($query_args);
+$query_args['orderby']	   = 'meta_value';	
+$user_query  = new WP_User_Query($query_args);	
 
-$flag	= rand(1,9999);
+$flag	= rand(1,9999);	
 ?>
 <div class="sc-featured-users">
 	<?php if ( !empty($atts['heading']) || !empty($atts['description'])) { ?>
@@ -73,8 +73,8 @@ $flag	= rand(1,9999);
                 <?php } ?>
             </div>
         </div>
-    <?php } ?>
-
+    <?php } ?>	
+    
     <?php
 		if ( ! empty( $user_query->results ) ) {
 		?>
@@ -89,25 +89,24 @@ $flag	= rand(1,9999);
 							 docdirect_get_user_avatar(array('width'=>275,'height'=>191), $user->ID),
 							 array('width'=>275,'height'=>191) //size width,height
 						);
-
+					
 				$first_name   		   = get_user_meta( $user->ID, 'first_name', true);
 				$last_name   		   = get_user_meta( $user->ID, 'last_name', true);
 				$display_name   	   = get_user_meta( $user->ID, 'display_name', true);
-
+				
 				if( !empty( $first_name ) || !empty( $last_name ) ){
 					$username	= $first_name.' '.$last_name;
 				} else{
 					$username	= $display_name;
 				}
-
+				
 				$featured_string	= $user->user_featured;
 				$current_date 	  = date('Y-m-d H:i:s');
 				$current_string	= strtotime( $current_date );
 				$data	= docdirect_get_everage_rating ( $user->ID );
 				$username	= docdirect_get_username( $user->ID );
-
+								
 				?>
-
                 <div class="item">
                     <figure>
                         <a href="<?php echo get_author_posts_url($user->ID); ?>"><img src="<?php echo esc_url( $avatar );?>" alt="<?php esc_html_e('User','docdirect');?>"></a>
@@ -116,40 +115,35 @@ $flag	= rand(1,9999);
 							<?php docdirect_get_featured_tag(true);?>
                         <?php }?>
                         <?php docdirect_get_verified_tag(true,$user->ID);?>
-
+                        <?php do_action('docdirect_display_provider_category',$user->ID);?>
                     </figure>
                     <div class="tg-contentbox">
                         <h3><a href="<?php echo get_author_posts_url($user->ID); ?>"><?php echo esc_attr( $username );?></a></h3>
                         <?php if( isset( $reviews_switch ) && $reviews_switch === 'enable' ){?>
-                        <!-- <div class="feature-rating">
+                        <div class="feature-rating">
                             <span class="tg-stars star-rating">
                                 <span style="width:<?php echo esc_attr( $data['percentage'] );?>%"></span>
                             </span>
                             <?php if( !empty( $data['average_rating'] ) ){?><em><?php echo number_format((float)$data['average_rating'], 1, '.', '');?><sub>/5</sub></em><?php }?>
-                        </div> -->
+                        </div>
                         <?php }?>
                         <?php if( !empty( $user->user_address ) ) {?>
                             <address><?php echo esc_attr( $user->user_address );?></address>
                         <?php }?>
-                        <?php if( !empty( $user->phone_number )
+                        <?php if( !empty( $user->phone_number ) 
 								  &&
 								  !empty( $privacy['phone'] )
-								  &&
+								  && 
 								  $privacy['phone'] == 'on'
 						) {?>
-                           <!-- <div class="tg-phone"><i class="fa fa-phone"></i> <em><a href="tel:<?php echo esc_attr( $user->phone_number );?>"><?php echo esc_attr( $user->phone_number );?></a></em></div>
-                        <?php }?> -->
-                        
-                        <?php do_action('docdirect_display_provider_category',$user->ID);?>
-                        
+                           <div class="tg-phone"><i class="fa fa-phone"></i> <em><a href="tel:<?php echo esc_attr( $user->phone_number );?>"><?php echo esc_attr( $user->phone_number );?></a></em></div>
+                        <?php }?>
                     </div>
                 </div>
                 <?php
 			}
 			?>
       </div>
-
-
       <script>
 	  	jQuery(document).ready(function(e) {
             jQuery("#tg-featuredlist-<?php echo esc_js( $uniq_flag );?>").owlCarousel({
@@ -163,7 +157,7 @@ $flag	= rand(1,9999);
 				responsive:{
 					0:{items:1},
 					481:{items:2},
-					991:{items:3},
+					991:{items:2},
 					1200:{items:3},
 					1280:{items:4},
 				}
@@ -175,4 +169,4 @@ $flag	= rand(1,9999);
 		  DoctorDirectory_NotificationsHelper::informations(esc_html__('No users Found.','docdirect'));
       }
 	  ?>
-</div>
+</div>				

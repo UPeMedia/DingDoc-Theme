@@ -77,8 +77,7 @@
 					<?php if( isset( $thumbnail ) && !empty( $thumbnail ) ){?>
 						<a href="<?php echo esc_url( get_the_permalink() ); ?>"><img src="<?php echo esc_url($thumbnail);?>" alt="<?php echo sanitize_title( get_the_title() ); ?>"></a>
 					<?php }?>
-					<ul class="tg-metadata" style="display:none">
-						<li><i class="fa fa-clock-o"></i><time datetime="<?php echo date_i18n('Y-m-d', strtotime(get_the_date('Y-m-d',$post->ID))); ?>"><?php echo date_i18n('d M, Y', strtotime(get_the_date('Y-m-d',$post->ID))); ?></time> </li>
+					
 
 				</figure>
 				<div class="tg-contentbox">
@@ -86,12 +85,14 @@
 						<div class="tg-displaytablecell">
 							<div class="tg-heading-border tg-small">
 								<h3><a href="<?php echo esc_url( get_the_permalink() ); ?>&tipo=<?php echo $_GET["tipo"]; ?>"><?php the_title(); ?> </a></h3>
+                                <p><time datetime="<?php echo date_i18n('Y-m-d', strtotime(get_the_date('Y-m-d',$post->ID))); ?>"><?php echo date_i18n('d M, Y', strtotime(get_the_date('Y-m-d',$post->ID))); ?></p>
 							</div>
-							<?php if( !empty( $atts['excerpt'] ) ){?>
-								<div class="tg-description">
-									<?php docdirect_prepare_excerpt($atts['excerpt'],'false',''); ?>
-								</div>
-							<?php }?>
+							<div class="tg-description">
+                                <?php the_excerpt(); ?>
+                            </div>
+                            <div class="tg-autor">
+                                <p>Artículo por: <strong><?php the_author(); ?></strong></p>
+                            </div>
 						</div>
 						
 					</div>
